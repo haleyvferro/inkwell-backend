@@ -1,0 +1,2 @@
+class GameMasterNote < ApplicationRecord
+end
