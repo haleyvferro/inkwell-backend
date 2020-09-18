@@ -1,3 +1,3 @@
 class GameMasterNote < ApplicationRecord
-    belongs to :game_master_notebook
+    belongs_to :game_master_notebook
 end
