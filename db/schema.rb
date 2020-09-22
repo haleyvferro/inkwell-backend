@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2020_09_16_224541) do
 
   create_table "character_goals", force: :cascade do |t|
-    t.integer "player_notebook_id"
+    t.integer "character_notebook_id"
     t.string "title"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -50,7 +50,7 @@ ActiveRecord::Schema.define(version: 2020_09_16_224541) do
   end
 
   create_table "game_master_notes", force: :cascade do |t|
-    t.integer "gm_notebook_id"
+    t.integer "game_master_notebook_id"
     t.string "title"
     t.text "content"
     t.boolean "visible_to_players"
