@@ -4,4 +4,6 @@ class User < ApplicationRecord
     has_many :games, through: :game_players
     has_many :character_notebooks
     has_many :game_master_notebooks
+
+    has_secure_password
 end

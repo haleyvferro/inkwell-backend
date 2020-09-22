@@ -49,7 +49,7 @@ milo = CharacterNotebook.create(user_id: scarlett.id, game_id: ehlonna.id, name:
 
 jd = CharacterNotebook.create(user_id: kelsy.id, game_id: motw.id, name: 'JD')
 aspen = CharacterNotebook.create(user_id: scarlett.id, game_id: motw.id, name: 'Aspen')
-toto = CharacterNotebook.create(user_id: haley.id, game_id: motw.id, name: 'Milo')
+toto = CharacterNotebook.create(user_id: haley.id, game_id: motw.id, name: 'Toto')
 
 jox = CharacterNotebook.create(user_id: kelsy.id, game_id: harvest.id, name: 'Joxter')
 cherry = CharacterNotebook.create(user_id: emily.id, game_id: harvest.id, name: 'Cherry')
