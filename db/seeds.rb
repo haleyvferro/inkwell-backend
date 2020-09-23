@@ -39,7 +39,12 @@ GamePlayer.create(game_id: harvest.id, user_id: carlos.id)
 
 ehlonnanotes = GameMasterNotebook.create(user_id: haley.id, game_id: ehlonna.id, name:"Ehlonna Notes")
 
-GameMasterNote.create()
+GameMasterNote.create(game_master_notebook_id: ehlonnanotes.id, title: "first note", content: "this is the very first note", visible_to_players: true)
+GameMasterNote.create(game_master_notebook_id: ehlonnanotes.id, title: "second note", content: "this is the very second note", visible_to_players: true)
+GameMasterNote.create(game_master_notebook_id: ehlonnanotes.id, title: "third note", content: "this is the very third note", visible_to_players: true)
+GameMasterNote.create(game_master_notebook_id: ehlonnanotes.id, title: "fourth note", content: "this is the very fourth note", visible_to_players: true)
+GameMasterNote.create(game_master_notebook_id: ehlonnanotes.id, title: "fifth note", content: "this is the very fifth note", visible_to_players: true)
+GameMasterNote.create(game_master_notebook_id: ehlonnanotes.id, title: "sixth note", content: "this is the very sixth note", visible_to_players: true)
 
 motwnotes = GameMasterNotebook.create(user_id: emily.id, game_id: motw.id, name:"Monster of the Week Notes")
 
