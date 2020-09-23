@@ -39,6 +39,8 @@ GamePlayer.create(game_id: harvest.id, user_id: carlos.id)
 
 ehlonnanotes = GameMasterNotebook.create(user_id: haley.id, game_id: ehlonna.id, name:"Ehlonna Notes")
 
+GameMasterNote.create()
+
 motwnotes = GameMasterNotebook.create(user_id: emily.id, game_id: motw.id, name:"Monster of the Week Notes")
 
 harvestnotes = GameMasterNotebook.create(user_id: haley.id, game_id: harvest.id, name:"Harvest Notes")
