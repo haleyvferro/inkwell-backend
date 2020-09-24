@@ -52,7 +52,29 @@ GameMasterNote.create(game_master_notebook_id: ehlonnanotes.id, title: "tenth no
 
 motwnotes = GameMasterNotebook.create(user_id: emily.id, game_id: motw.id, name:"Monster of the Week Notes")
 
+GameMasterNote.create(game_master_notebook_id: motwnotes.id, title: "first note", content: "this is the very first note", visible_to_players: true)
+GameMasterNote.create(game_master_notebook_id: motwnotes.id, title: "second note", content: "this is the very second note", visible_to_players: true)
+GameMasterNote.create(game_master_notebook_id: motwnotes.id, title: "third note", content: "this is the very third note", visible_to_players: true)
+GameMasterNote.create(game_master_notebook_id: motwnotes.id, title: "fourth note", content: "this is the very fourth note", visible_to_players: true)
+GameMasterNote.create(game_master_notebook_id: motwnotes.id, title: "fifth note", content: "this is the very fifth note", visible_to_players: true)
+GameMasterNote.create(game_master_notebook_id: motwnotes.id, title: "sixth note", content: "this is the very sixth note", visible_to_players: true)
+GameMasterNote.create(game_master_notebook_id: motwnotes.id, title: "seventh note", content: "this is the very seventh note", visible_to_players: true)
+GameMasterNote.create(game_master_notebook_id: motwnotes.id, title: "eighth note", content: "this is the very eighth note", visible_to_players: true)
+GameMasterNote.create(game_master_notebook_id: motwnotes.id, title: "ninth note", content: "this is the very ninth note", visible_to_players: true)
+GameMasterNote.create(game_master_notebook_id: motwnotes.id, title: "tenth note", content: "this is the very tenth note", visible_to_players: true)
+
 harvestnotes = GameMasterNotebook.create(user_id: haley.id, game_id: harvest.id, name:"Harvest Notes")
+
+GameMasterNote.create(game_master_notebook_id: harvestnotes.id, title: "first note", content: "this is the very first note", visible_to_players: true)
+GameMasterNote.create(game_master_notebook_id: harvestnotes.id, title: "second note", content: "this is the very second note", visible_to_players: true)
+GameMasterNote.create(game_master_notebook_id: harvestnotes.id, title: "third note", content: "this is the very third note", visible_to_players: true)
+GameMasterNote.create(game_master_notebook_id: harvestnotes.id, title: "fourth note", content: "this is the very fourth note", visible_to_players: true)
+GameMasterNote.create(game_master_notebook_id: harvestnotes.id, title: "fifth note", content: "this is the very fifth note", visible_to_players: true)
+GameMasterNote.create(game_master_notebook_id: harvestnotes.id, title: "sixth note", content: "this is the very sixth note", visible_to_players: true)
+GameMasterNote.create(game_master_notebook_id: harvestnotes.id, title: "seventh note", content: "this is the very seventh note", visible_to_players: true)
+GameMasterNote.create(game_master_notebook_id: harvestnotes.id, title: "eighth note", content: "this is the very eighth note", visible_to_players: true)
+GameMasterNote.create(game_master_notebook_id: harvestnotes.id, title: "ninth note", content: "this is the very ninth note", visible_to_players: true)
+GameMasterNote.create(game_master_notebook_id: harvestnotes.id, title: "tenth note", content: "this is the very tenth note", visible_to_players: true)
 
 taro = CharacterNotebook.create(user_id: kelsy.id, game_id: ehlonna.id, name: 'Taro')
 ellis = CharacterNotebook.create(user_id: emily.id, game_id: ehlonna.id, name: 'Ellis')
