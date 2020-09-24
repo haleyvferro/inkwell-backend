@@ -47,6 +47,6 @@ class GameMasterNotesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def game_master_note_params
-      params.require(:game_master_note).permit(:gm_notebook_id, :title, :content, :visible_to_players)
+      params.require(:game_master_note).permit(:game_master_notebook_id, :title, :content, :visible_to_players)
     end
 end
