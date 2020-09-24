@@ -36,6 +36,7 @@ class GameMasterNotesController < ApplicationController
   # DELETE /game_master_notes/1
   def destroy
     @game_master_note.destroy
+    # render json: @game_master_note
   end
 
   private
