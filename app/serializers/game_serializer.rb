@@ -3,6 +3,7 @@ class GameSerializer < ActiveModel::Serializer
   has_many :character_notebooks
   has_one :game_master_notebook
   belongs_to :game_master
+  has_many :users
   # has_many :character_notes, through: :character_notebooks
 
   # def characters
@@ -19,7 +20,7 @@ class GameSerializer < ActiveModel::Serializer
   #   end
   # end
     
-      # def players
+      # def users
       #   self.object.users.map do |user|
       #     {
       #       player_id: user.id
