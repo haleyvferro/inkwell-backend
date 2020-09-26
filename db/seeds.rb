@@ -77,8 +77,25 @@ GameMasterNote.create(game_master_notebook_id: harvestnotes.id, title: "ninth no
 GameMasterNote.create(game_master_notebook_id: harvestnotes.id, title: "tenth note", content: "this is the very tenth note", visible_to_players: true)
 
 taro = CharacterNotebook.create(user_id: kelsy.id, game_id: ehlonna.id, name: 'Taro')
+CharacterNote.create(character_notebook_id: taro.id, title: "first note", content: "this is the very first note", visible_to_other_players: true)
+CharacterNote.create(character_notebook_id: taro.id, title: "second note", content: "this is the very second note", visible_to_other_players: true)
+CharacterNote.create(character_notebook_id: taro.id, title: "third note", content: "this is the very third note", visible_to_other_players: true)
+CharacterNote.create(character_notebook_id: taro.id, title: "fourth note", content: "this is the very fourth note", visible_to_other_players: true)
+CharacterNote.create(character_notebook_id: taro.id, title: "fifth note", content: "this is the very fifth note", visible_to_other_players: true)
+
 ellis = CharacterNotebook.create(user_id: emily.id, game_id: ehlonna.id, name: 'Ellis')
+CharacterNote.create(character_notebook_id: ellis.id, title: "first note", content: "this is the very first note", visible_to_other_players: true)
+CharacterNote.create(character_notebook_id: ellis.id, title: "second note", content: "this is the very second note", visible_to_other_players: true)
+CharacterNote.create(character_notebook_id: ellis.id, title: "third note", content: "this is the very third note", visible_to_other_players: true)
+CharacterNote.create(character_notebook_id: ellis.id, title: "fourth note", content: "this is the very fourth note", visible_to_other_players: true)
+CharacterNote.create(character_notebook_id: ellis.id, title: "fifth note", content: "this is the very fifth note", visible_to_other_players: true)
+
 milo = CharacterNotebook.create(user_id: scarlett.id, game_id: ehlonna.id, name: 'Milo')
+CharacterNote.create(character_notebook_id: milo.id, title: "first note", content: "this is the very first note", visible_to_other_players: true)
+CharacterNote.create(character_notebook_id: milo.id, title: "second note", content: "this is the very second note", visible_to_other_players: true)
+CharacterNote.create(character_notebook_id: milo.id, title: "third note", content: "this is the very third note", visible_to_other_players: true)
+CharacterNote.create(character_notebook_id: milo.id, title: "fourth note", content: "this is the very fourth note", visible_to_other_players: true)
+CharacterNote.create(character_notebook_id: milo.id, title: "fifth note", content: "this is the very fifth note", visible_to_other_players: true)
 
 jd = CharacterNotebook.create(user_id: kelsy.id, game_id: motw.id, name: 'JD')
 aspen = CharacterNotebook.create(user_id: scarlett.id, game_id: motw.id, name: 'Aspen')
