@@ -4,4 +4,5 @@ class UserSerializer < ActiveModel::Serializer
   has_many :game_master_notebooks
   has_many :game_creations
   has_many :games
+  has_many :game_players
 end
