@@ -34,7 +34,7 @@ class Api::V1::AuthController < ApplicationController
         }
       end
       if user 
-        render json: { id: user.id, username: user.username, token: token, character_notebooks: user.character_notebooks, game_master_notebooks: gm_notebooks, game_creations: user.game_creations, games: user.games }
+        render json: { id: user.id, username: user.username, token: token, character_notebooks: user.character_notebooks, game_master_notebooks: gm_notebooks, game_creations: user.game_creations, games: user.games, game_players: user.game_players }
       else
         render json: {error: 'Invalid Token...'}
       end
