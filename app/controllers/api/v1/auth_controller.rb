@@ -14,7 +14,15 @@ class Api::V1::AuthController < ApplicationController
             gm_notes: notebook.game_master_notes
           }
         end
-        render json: { id: user.id, username: user.username, token: token, character_notebooks: user.character_notebooks, game_master_notebooks: gm_notebooks, game_creations: user.game_creations, games: user.games }
+        character_notebooks = user.character_notebooks.map do |notebook|
+          {
+            id: notebook.id,
+            user_id: notebook.user_id,
+            name: notebook.name,
+            character_notes: notebook.character_notes
+          }
+        end
+        render json: { id: user.id, username: user.username, token: token, character_notebooks: character_notebooks, game_master_notebooks: gm_notebooks, game_creations: user.game_creations, games: user.games }
       else
         render json: { error: 'Invalid username or password.' }
       end
@@ -33,8 +41,16 @@ class Api::V1::AuthController < ApplicationController
           gm_notes: notebook.game_master_notes
         }
       end
+      character_notebooks = user.character_notebooks.map do |notebook|
+        {
+          id: notebook.id,
+          user_id: notebook.user_id,
+          name: notebook.name,
+          character_notes: notebook.character_notes
+        }
+      end
       if user 
-        render json: { id: user.id, username: user.username, token: token, character_notebooks: user.character_notebooks, game_master_notebooks: gm_notebooks, game_creations: user.game_creations, games: user.games, game_players: user.game_players }
+        render json: { id: user.id, username: user.username, token: token, character_notebooks: character_notebooks, game_master_notebooks: gm_notebooks, game_creations: user.game_creations, games: user.games, game_players: user.game_players }
       else
         render json: {error: 'Invalid Token...'}
       end
