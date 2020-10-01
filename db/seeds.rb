@@ -22,7 +22,7 @@ ehlonna = Game.create(gm_id: haley.id, game_name:"Ehlonna's Paradise", game_desc
 
 motw = Game.create(gm_id: emily.id, game_name:"MOTW", game_description:"Running around fighting zombies and monsters and a librarian")
 
-harvest = Game.create(gm_id: haley.id, game_name:"Harvest Moon Knockoff", game_description:"what it says on the tin")
+harvest = Game.create(gm_id: haley.id, game_name:"Harvest Moon", game_description:"what it says on the tin")
 
 GamePlayer.create(game_id: ehlonna.id, user_id: emily.id)
 GamePlayer.create(game_id: ehlonna.id, user_id: kelsy.id)
